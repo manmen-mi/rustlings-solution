@@ -18,6 +18,7 @@
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
+	"onCreateCommand": "cargo install rustlings",
 	"postCreateCommand": "rustc --version",
 
 	// Configure tool-specific properties.
