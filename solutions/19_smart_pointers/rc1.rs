@@ -59,7 +59,6 @@ mod tests {
         println!("reference count = {}", Rc::strong_count(&sun)); // 6 references
         jupiter.details();
 
-        // TODO
         let saturn = Planet::Saturn(Rc::clone(&sun));
         println!("reference count = {}", Rc::strong_count(&sun)); // 7 references
         saturn.details();
@@ -91,15 +90,12 @@ mod tests {
         drop(mars);
         println!("reference count = {}", Rc::strong_count(&sun)); // 4 references
 
-        // TODO
         drop(earth);
         println!("reference count = {}", Rc::strong_count(&sun)); // 3 references
 
-        // TODO
         drop(venus);
         println!("reference count = {}", Rc::strong_count(&sun)); // 2 references
 
-        // TODO
         drop(mercury);
         println!("reference count = {}", Rc::strong_count(&sun)); // 1 reference
 
