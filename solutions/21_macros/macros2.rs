@@ -1,4 +1,4 @@
-// TODO: Fix the compiler error by moving the whole definition of this macro.
+// Moved the macro definition to be before its call.
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");
